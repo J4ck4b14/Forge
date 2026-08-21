@@ -3,6 +3,7 @@ const allowed = {
   core: [],
   serialization: ['@forge/core', 'zod'],
   runtime: ['@forge/core'],
+  editor: ['@forge/core', '@forge/serialization', '@forge/runtime'],
 };
 let errors = 0;
 for (const [name, dependencies] of Object.entries(allowed)) {
