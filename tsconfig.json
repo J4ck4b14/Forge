@@ -19,7 +19,10 @@
       "@forge/core": ["./packages/core/src/index.ts"],
       "@forge/serialization": ["./packages/serialization/src/index.ts"],
       "@forge/runtime": ["./packages/runtime/src/index.ts"],
-      "@forge/editor": ["./packages/editor/src/index.ts"]
+      "@forge/editor": ["./packages/editor/src/index.ts"],
+      "@forge/assets": ["./packages/assets/src/index.ts"],
+      "@forge/renderer": ["./packages/renderer/src/index.ts"],
+      "@forge/renderer/pixi": ["./packages/renderer/src/pixi.ts"]
     }
   },
   "include": ["packages", "examples", "tests", "vite.config.ts"]

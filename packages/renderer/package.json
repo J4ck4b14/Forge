@@ -1,0 +1,16 @@
+{
+  "name": "@forge/renderer",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./pixi": "./src/pixi.ts"
+  },
+  "dependencies": {
+    "@forge/core": "0.1.0",
+    "@forge/assets": "0.2.0",
+    "zod": "4.3.6",
+    "pixi.js": "8.16.0"
+  }
+}
