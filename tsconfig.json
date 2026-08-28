@@ -22,7 +22,10 @@
       "@forge/editor": ["./packages/editor/src/index.ts"],
       "@forge/assets": ["./packages/assets/src/index.ts"],
       "@forge/renderer": ["./packages/renderer/src/index.ts"],
-      "@forge/renderer/pixi": ["./packages/renderer/src/pixi.ts"]
+      "@forge/renderer/pixi": ["./packages/renderer/src/pixi.ts"],
+      "@forge/physics2d": ["./packages/physics2d/src/index.ts"],
+      "@forge/input": ["./packages/input/src/index.ts"],
+      "@forge/physics2d/rapier": ["./packages/physics2d/src/rapier.ts"]
     }
   },
   "include": ["packages", "examples", "tests", "vite.config.ts"]

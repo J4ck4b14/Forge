@@ -1,3 +1,4 @@
+import { registerPhysics } from '@forge/physics2d';
 import { registerRendering } from '@forge/renderer';
 import {
   World,
@@ -44,6 +45,7 @@ export function editorRegistry(): ComponentRegistry {
   const registry = createRegistry();
   registry.register(NoteComponent);
   registerRendering(registry);
+  registerPhysics(registry);
   return registry;
 }
 interface Snapshot {

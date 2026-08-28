@@ -1,9 +1,22 @@
 import { readdir, readFile } from 'node:fs/promises';
 const allowed = {
   core: [],
+  input: ['zod'],
+  physics2d: [
+    '@forge/core',
+    '@forge/runtime',
+    'zod',
+    '@dimforge/rapier2d-compat',
+  ],
   assets: ['@forge/core', 'zod'],
   renderer: ['@forge/core', '@forge/assets', 'zod', 'pixi.js'],
-  serialization: ['@forge/core', '@forge/assets', 'zod'],
+  serialization: [
+    '@forge/core',
+    '@forge/assets',
+    '@forge/physics2d',
+    '@forge/input',
+    'zod',
+  ],
   runtime: ['@forge/core'],
   editor: [
     '@forge/core',
@@ -11,6 +24,8 @@ const allowed = {
     '@forge/runtime',
     '@forge/assets',
     '@forge/renderer',
+    '@forge/physics2d',
+    '@forge/input',
   ],
 };
 let errors = 0;
