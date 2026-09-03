@@ -1,6 +1,15 @@
 import { readdir, readFile } from 'node:fs/promises';
 const allowed = {
   core: [],
+  scripting: [
+    '@forge/core',
+    '@forge/runtime',
+    '@forge/assets',
+    '@forge/input',
+    '@forge/physics2d',
+    'typescript',
+    'zod',
+  ],
   input: ['zod'],
   physics2d: [
     '@forge/core',
@@ -24,6 +33,7 @@ const allowed = {
     '@forge/runtime',
     '@forge/assets',
     '@forge/renderer',
+    '@forge/scripting',
     '@forge/physics2d',
     '@forge/input',
   ],
