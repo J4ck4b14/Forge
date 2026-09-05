@@ -9,6 +9,9 @@
     "zod": "4.3.6",
     "@forge/assets": "0.2.0",
     "@forge/physics2d": "0.3.0",
-    "@forge/input": "0.3.0"
+    "@forge/input": "0.3.0",
+    "@forge/prefabs": "*",
+    "@forge/animation": "*",
+    "@forge/audio": "*"
   }
 }

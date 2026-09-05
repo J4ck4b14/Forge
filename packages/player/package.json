@@ -1,0 +1,23 @@
+{
+  "name": "@forge/player",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./session": "./src/session.ts"
+  },
+  "dependencies": {
+    "@forge/core": "*",
+    "@forge/serialization": "*",
+    "@forge/runtime": "*",
+    "@forge/renderer": "*",
+    "@forge/physics2d": "*",
+    "@forge/input": "*",
+    "@forge/scripting": "*",
+    "@forge/prefabs": "*",
+    "@forge/animation": "*",
+    "@forge/audio": "*",
+    "@forge/assets": "*"
+  }
+}

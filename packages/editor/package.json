@@ -1,6 +1,6 @@
 {
   "name": "@forge/editor",
-  "version": "0.4.0",
+  "version": "0.7.0",
   "private": true,
   "type": "module",
   "exports": "./src/index.ts",
@@ -12,6 +12,10 @@
     "@forge/renderer": "0.2.0",
     "@forge/physics2d": "0.3.0",
     "@forge/input": "0.3.0",
-    "@forge/scripting": "0.4.0"
+    "@forge/scripting": "0.4.0",
+    "@forge/prefabs": "*",
+    "@forge/animation": "*",
+    "@forge/audio": "*",
+    "@forge/player": "*"
   }
 }

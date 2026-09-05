@@ -27,7 +27,12 @@
       "@forge/input": ["./packages/input/src/index.ts"],
       "@forge/physics2d/rapier": ["./packages/physics2d/src/rapier.ts"],
       "@forge/scripting": ["./packages/scripting/src/index.ts"],
-      "@forge/scripting/compiler": ["./packages/scripting/src/compiler.ts"]
+      "@forge/scripting/compiler": ["./packages/scripting/src/compiler.ts"],
+      "@forge/prefabs": ["./packages/prefabs/src/index.ts"],
+      "@forge/animation": ["./packages/animation/src/index.ts"],
+      "@forge/audio": ["./packages/audio/src/index.ts"],
+      "@forge/player": ["./packages/player/src/index.ts"],
+      "@forge/player/session": ["./packages/player/src/session.ts"]
     }
   },
   "include": ["packages", "examples", "tests", "vite.config.ts"]

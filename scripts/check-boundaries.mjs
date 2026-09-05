@@ -1,6 +1,15 @@
 import { readdir, readFile } from 'node:fs/promises';
 const allowed = {
   core: [],
+  prefabs: ['@forge/core', 'zod'],
+  animation: [
+    '@forge/core',
+    '@forge/assets',
+    '@forge/runtime',
+    '@forge/renderer',
+    'zod',
+  ],
+  audio: ['@forge/core', '@forge/assets', '@forge/runtime', 'zod'],
   scripting: [
     '@forge/core',
     '@forge/runtime',
@@ -20,6 +29,9 @@ const allowed = {
   assets: ['@forge/core', 'zod'],
   renderer: ['@forge/core', '@forge/assets', 'zod', 'pixi.js'],
   serialization: [
+    '@forge/prefabs',
+    '@forge/animation',
+    '@forge/audio',
     '@forge/core',
     '@forge/assets',
     '@forge/physics2d',
@@ -27,7 +39,24 @@ const allowed = {
     'zod',
   ],
   runtime: ['@forge/core'],
+  player: [
+    '@forge/core',
+    '@forge/serialization',
+    '@forge/runtime',
+    '@forge/renderer',
+    '@forge/physics2d',
+    '@forge/input',
+    '@forge/scripting',
+    '@forge/prefabs',
+    '@forge/animation',
+    '@forge/audio',
+    '@forge/assets',
+  ],
   editor: [
+    '@forge/player',
+    '@forge/prefabs',
+    '@forge/animation',
+    '@forge/audio',
     '@forge/core',
     '@forge/serialization',
     '@forge/runtime',
