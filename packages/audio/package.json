@@ -7,9 +7,9 @@
     ".": "./src/index.ts"
   },
   "dependencies": {
-    "@forge/core": "*",
-    "@forge/assets": "*",
-    "@forge/runtime": "*",
+    "@forge/core": "0.1.0",
+    "@forge/assets": "0.2.0",
+    "@forge/runtime": "0.1.0",
     "zod": "4.3.6"
   }
 }

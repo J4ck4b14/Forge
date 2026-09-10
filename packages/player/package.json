@@ -1,6 +1,6 @@
 {
   "name": "@forge/player",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": true,
   "type": "module",
   "exports": {
@@ -8,16 +8,16 @@
     "./session": "./src/session.ts"
   },
   "dependencies": {
-    "@forge/core": "*",
-    "@forge/serialization": "*",
-    "@forge/runtime": "*",
-    "@forge/renderer": "*",
-    "@forge/physics2d": "*",
-    "@forge/input": "*",
-    "@forge/scripting": "*",
-    "@forge/prefabs": "*",
-    "@forge/animation": "*",
-    "@forge/audio": "*",
-    "@forge/assets": "*"
+    "@forge/core": "0.1.0",
+    "@forge/serialization": "0.1.0",
+    "@forge/runtime": "0.1.0",
+    "@forge/renderer": "0.8.0",
+    "@forge/physics2d": "0.3.0",
+    "@forge/input": "0.3.0",
+    "@forge/scripting": "0.4.0",
+    "@forge/prefabs": "0.6.0",
+    "@forge/animation": "0.6.0",
+    "@forge/audio": "0.6.0",
+    "@forge/assets": "0.2.0"
   }
 }

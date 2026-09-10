@@ -10,8 +10,8 @@
     "@forge/assets": "0.2.0",
     "@forge/physics2d": "0.3.0",
     "@forge/input": "0.3.0",
-    "@forge/prefabs": "*",
-    "@forge/animation": "*",
-    "@forge/audio": "*"
+    "@forge/prefabs": "0.6.0",
+    "@forge/animation": "0.6.0",
+    "@forge/audio": "0.6.0"
   }
 }
