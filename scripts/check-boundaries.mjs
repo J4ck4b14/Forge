@@ -16,6 +16,7 @@ const allowed = {
     '@forge/assets',
     '@forge/input',
     '@forge/physics2d',
+    '@forge/renderer',
     'typescript',
     'zod',
   ],

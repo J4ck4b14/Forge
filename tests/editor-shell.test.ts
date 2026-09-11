@@ -7,6 +7,7 @@ vi.mock('@forge/renderer/pixi', () => ({
       resize() {},
       render() {},
       setAssets: async () => {},
+      invalidateStaticLighting() {},
       destroy() {},
     }),
   },

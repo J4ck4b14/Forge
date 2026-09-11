@@ -1,4 +1,4 @@
-import { ScriptBehaviour } from '@forge/scripting';
+import { Perception2D, ScriptBehaviour } from '@forge/scripting';
 import { PrefabLink } from '@forge/prefabs';
 import { Animator } from '@forge/animation';
 import { AudioSource } from '@forge/audio';
@@ -33,6 +33,7 @@ export function runtimeRegistry(): ComponentRegistry {
   registerRendering(registry);
   registerPhysics(registry);
   registry.register(ScriptBehaviour);
+  registry.register(Perception2D);
   registry.register(PrefabLink);
   registry.register(Animator);
   registry.register(AudioSource);
