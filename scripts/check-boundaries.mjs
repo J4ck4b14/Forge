@@ -20,6 +20,13 @@ const allowed = {
     'typescript',
     'zod',
   ],
+  graphs: [
+    '@forge/assets',
+    '@forge/core',
+    '@forge/physics2d',
+    '@forge/scripting',
+    'zod',
+  ],
   input: ['zod'],
   physics2d: [
     '@forge/core',
@@ -37,6 +44,7 @@ const allowed = {
     '@forge/assets',
     '@forge/physics2d',
     '@forge/input',
+    '@forge/graphs',
     'zod',
   ],
   runtime: ['@forge/core'],
@@ -52,6 +60,7 @@ const allowed = {
     '@forge/animation',
     '@forge/audio',
     '@forge/assets',
+    '@forge/graphs',
   ],
   editor: [
     '@forge/player',
@@ -66,6 +75,7 @@ const allowed = {
     '@forge/scripting',
     '@forge/physics2d',
     '@forge/input',
+    '@forge/graphs',
   ],
 };
 let errors = 0;

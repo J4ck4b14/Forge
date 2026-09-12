@@ -5,6 +5,7 @@
   "type": "module",
   "exports": "./src/index.ts",
   "dependencies": {
+    "@forge/graphs": "0.1.0",
     "@forge/core": "0.1.0",
     "@forge/serialization": "0.1.0",
     "@forge/runtime": "0.1.0",

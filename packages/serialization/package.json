@@ -12,6 +12,7 @@
     "@forge/input": "0.3.0",
     "@forge/prefabs": "0.6.0",
     "@forge/animation": "0.6.0",
-    "@forge/audio": "0.6.0"
+    "@forge/audio": "0.6.0",
+    "@forge/graphs": "0.1.0"
   }
 }

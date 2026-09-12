@@ -24,6 +24,7 @@ export const AssetSchema = z
       'application/x-forge-prefab',
       'application/x-forge-animation',
       'application/x-forge-animator',
+      'application/x-forge-behaviour-graph',
       'audio/wav',
       'audio/mpeg',
       'audio/ogg',

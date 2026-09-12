@@ -22,6 +22,7 @@ import {
 } from '@forge/scripting';
 import { runtimeRegistry } from './registry';
 import { RuntimePrefabs } from './prefabs';
+import { GraphRuntime } from '@forge/graphs';
 /** Shared runtime composition for editor Play and exported games. Hosts own scheduling and UI. */
 export class GameSession {
   private constructor(
@@ -84,7 +85,13 @@ export class GameSession {
             renderer!.screenToWorld(world, position),
           worldToScreen: (position: readonly [number, number]) =>
             renderer!.worldToScreen(world, position),
-        };
+        },
+        graphs = new GraphRuntime(project.assets, {
+          trace: (event) =>
+            window.dispatchEvent(
+              new CustomEvent('forge-graph-trace', { detail: event }),
+            ),
+        });
       audio = await loadStage(
         'Decoding audio',
         () => AudioSystem.create(world, project.assets, project.mixer),
@@ -111,7 +118,7 @@ export class GameSession {
           log,
           loadScene,
           { animation, audio },
-          { signals, timers, tweens, prefabs, coordinates },
+          { signals, timers, tweens, prefabs, coordinates, graphs },
         ),
       );
       engine.addSystem(animation);
