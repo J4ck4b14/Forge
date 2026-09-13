@@ -10,15 +10,15 @@
 | `@forge/runtime`       | Core                                                                  | Time, ordered lifecycle, signals, timers and tweens                              |
 | `@forge/tilemap`       | Core, Zod                                                             | Tile-set and sparse layered tilemap data contracts                               |
 | `@forge/physics2d`     | Core, assets, runtime/tilemap types, Zod, Rapier adapter              | Physics, Character Body 2D and chunked tile collision                            |
-| `@forge/renderer`      | Core, assets, runtime/tilemap types, Zod, Pixi adapter                | Sprite-region/tile/camera data and rendering contract                            |
+| `@forge/renderer`      | Core, assets, runtime/tilemap types, Zod, Pixi adapter                | Sprite-region/tile/camera/particle data and rendering contract                   |
 | `@forge/serialization` | Core, assets, physics/input/prefab/animation/audio/graph schemas, Zod | Strict project/scene validation and migrations                                   |
 | `@forge/scripting`     | Core, runtime, assets, input/physics types, TypeScript compiler, Zod  | Script data, compilation/linking and behavior lifecycle                          |
 | `@forge/graphs`        | Core, assets, scripting/physics types, Zod                            | Behaviour Graph schema, typed node registry and shared-context execution         |
 | `@forge/ui`            | Core, assets, runtime signals, Zod                                    | Accessible DOM runtime UI components, layout and interaction                     |
 | `@forge/persistence`   | Zod                                                                   | Save profiles/slots, migrations, integrity, autosave and achievements            |
 | `@forge/prefabs`       | Core, Zod                                                             | Linked hierarchy identity, property patches and propagation                      |
-| `@forge/animation`     | Core, assets, runtime types, renderer, Zod                            | Clips, controllers, parameter evaluation and playback                            |
-| `@forge/audio`         | Core, assets, runtime types, Zod                                      | AudioSource, decoded buffers and Web Audio bus routing                           |
+| `@forge/animation`     | Core, assets, runtime types, renderer, Zod                            | Clips, events, controllers, cross-fades and parameter evaluation                 |
+| `@forge/audio`         | Core, assets, runtime types, Zod                                      | Polyphonic/spatial AudioSource, decoded buffers and Web Audio routing            |
 | `@forge/player`        | Runtime engine packages                                               | Shared GameSession composition and standalone player                             |
 | `@forge/editor`        | Public engine packages                                                | Authoring model, viewport, Inspector, persistence, project scripts and Play host |
 

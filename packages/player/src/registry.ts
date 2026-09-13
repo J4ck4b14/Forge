@@ -3,7 +3,7 @@ import { PrefabLink } from '@forge/prefabs';
 import { Animator } from '@forge/animation';
 import { AudioSource } from '@forge/audio';
 import { registerPhysics } from '@forge/physics2d';
-import { registerRendering } from '@forge/renderer';
+import { ParticleEmitter2D, registerRendering } from '@forge/renderer';
 import { registerUi } from '@forge/ui';
 import { registerTilemap } from '@forge/tilemap';
 import {
@@ -33,6 +33,7 @@ export function runtimeRegistry(): ComponentRegistry {
   const registry = createRegistry();
   registry.register(NoteComponent);
   registerRendering(registry);
+  registry.register(ParticleEmitter2D);
   registerPhysics(registry);
   registerUi(registry);
   registerTilemap(registry);
