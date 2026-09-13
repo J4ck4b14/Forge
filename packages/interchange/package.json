@@ -1,10 +1,12 @@
 {
   "name": "@forge/interchange",
-  "version": "0.16.1",
+  "version": "0.16.2",
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./godot": "./src/godot.ts",
+    "./unity": "./src/unity.ts"
   },
   "dependencies": {
     "@forge/graphs": "0.1.0",
