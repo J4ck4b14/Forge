@@ -19,6 +19,7 @@
     "@forge/prefabs": "0.6.0",
     "@forge/animation": "0.6.0",
     "@forge/audio": "0.6.0",
-    "@forge/player": "0.8.0"
+    "@forge/player": "0.8.0",
+    "@forge/tilemap": "0.1.0"
   }
 }

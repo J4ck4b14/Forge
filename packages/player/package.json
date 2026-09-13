@@ -21,6 +21,7 @@
     "@forge/assets": "0.2.0",
     "@forge/graphs": "0.1.0",
     "@forge/ui": "0.1.0",
-    "@forge/persistence": "0.1.0"
+    "@forge/persistence": "0.1.0",
+    "@forge/tilemap": "0.1.0"
   }
 }

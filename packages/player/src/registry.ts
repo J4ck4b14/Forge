@@ -5,6 +5,7 @@ import { AudioSource } from '@forge/audio';
 import { registerPhysics } from '@forge/physics2d';
 import { registerRendering } from '@forge/renderer';
 import { registerUi } from '@forge/ui';
+import { registerTilemap } from '@forge/tilemap';
 import {
   createRegistry,
   type ComponentRegistry,
@@ -34,6 +35,7 @@ export function runtimeRegistry(): ComponentRegistry {
   registerRendering(registry);
   registerPhysics(registry);
   registerUi(registry);
+  registerTilemap(registry);
   registry.register(Behaviours);
   registry.register(Perception2D);
   registry.register(PrefabLink);

@@ -31,6 +31,7 @@
       "@forge/graphs": ["./packages/graphs/src/index.ts"],
       "@forge/ui": ["./packages/ui/src/index.ts"],
       "@forge/persistence": ["./packages/persistence/src/index.ts"],
+      "@forge/tilemap": ["./packages/tilemap/src/index.ts"],
       "@forge/prefabs": ["./packages/prefabs/src/index.ts"],
       "@forge/animation": ["./packages/animation/src/index.ts"],
       "@forge/audio": ["./packages/audio/src/index.ts"],

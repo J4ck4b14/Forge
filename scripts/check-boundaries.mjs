@@ -29,15 +29,25 @@ const allowed = {
   ],
   ui: ['@forge/assets', '@forge/core', '@forge/runtime', 'zod'],
   persistence: ['zod'],
+  tilemap: ['@forge/core', 'zod'],
   input: ['zod'],
   physics2d: [
+    '@forge/assets',
     '@forge/core',
     '@forge/runtime',
+    '@forge/tilemap',
     'zod',
     '@dimforge/rapier2d-compat',
   ],
   assets: ['@forge/core', 'zod'],
-  renderer: ['@forge/core', '@forge/assets', 'zod', 'pixi.js'],
+  renderer: [
+    '@forge/core',
+    '@forge/assets',
+    '@forge/runtime',
+    '@forge/tilemap',
+    'zod',
+    'pixi.js',
+  ],
   serialization: [
     '@forge/prefabs',
     '@forge/animation',
@@ -48,6 +58,7 @@ const allowed = {
     '@forge/input',
     '@forge/graphs',
     '@forge/persistence',
+    '@forge/tilemap',
     'zod',
   ],
   runtime: ['@forge/core'],
@@ -66,6 +77,7 @@ const allowed = {
     '@forge/graphs',
     '@forge/ui',
     '@forge/persistence',
+    '@forge/tilemap',
   ],
   editor: [
     '@forge/player',
@@ -83,6 +95,7 @@ const allowed = {
     '@forge/graphs',
     '@forge/ui',
     '@forge/persistence',
+    '@forge/tilemap',
   ],
 };
 let errors = 0;

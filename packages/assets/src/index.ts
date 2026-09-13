@@ -1,5 +1,20 @@
 import { z } from 'zod';
 import { guid, GUID_PATTERN, type ComponentRegistry } from '@forge/core';
+export const SPRITE_REGION_MIME = 'application/x-forge-sprite-region';
+export const SpriteRegionSchema = z.strictObject({
+  version: z.literal(1),
+  source: z.string().regex(GUID_PATTERN),
+  x: z.number().int().nonnegative(),
+  y: z.number().int().nonnegative(),
+  width: z.number().int().positive(),
+  height: z.number().int().positive(),
+  pivotX: z.number().finite(),
+  pivotY: z.number().finite(),
+  filter: z.enum(['nearest', 'linear']),
+  trim: z.boolean(),
+  atlas: z.string(),
+});
+export type SpriteRegion = z.infer<typeof SpriteRegionSchema>;
 export const AssetSchema = z
   .strictObject({
     id: z.string().regex(GUID_PATTERN),
@@ -25,6 +40,8 @@ export const AssetSchema = z
       'application/x-forge-animation',
       'application/x-forge-animator',
       'application/x-forge-behaviour-graph',
+      SPRITE_REGION_MIME,
+      'application/x-forge-tileset',
       'audio/wav',
       'audio/mpeg',
       'audio/ogg',
