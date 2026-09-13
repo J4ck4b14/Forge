@@ -4,6 +4,7 @@ import { Animator } from '@forge/animation';
 import { AudioSource } from '@forge/audio';
 import { registerPhysics } from '@forge/physics2d';
 import { registerRendering } from '@forge/renderer';
+import { registerUi } from '@forge/ui';
 import {
   createRegistry,
   type ComponentRegistry,
@@ -32,6 +33,7 @@ export function runtimeRegistry(): ComponentRegistry {
   registry.register(NoteComponent);
   registerRendering(registry);
   registerPhysics(registry);
+  registerUi(registry);
   registry.register(Behaviours);
   registry.register(Perception2D);
   registry.register(PrefabLink);

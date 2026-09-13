@@ -27,6 +27,8 @@ const allowed = {
     '@forge/scripting',
     'zod',
   ],
+  ui: ['@forge/assets', '@forge/core', '@forge/runtime', 'zod'],
+  persistence: ['zod'],
   input: ['zod'],
   physics2d: [
     '@forge/core',
@@ -45,6 +47,7 @@ const allowed = {
     '@forge/physics2d',
     '@forge/input',
     '@forge/graphs',
+    '@forge/persistence',
     'zod',
   ],
   runtime: ['@forge/core'],
@@ -61,6 +64,8 @@ const allowed = {
     '@forge/audio',
     '@forge/assets',
     '@forge/graphs',
+    '@forge/ui',
+    '@forge/persistence',
   ],
   editor: [
     '@forge/player',
@@ -76,6 +81,8 @@ const allowed = {
     '@forge/physics2d',
     '@forge/input',
     '@forge/graphs',
+    '@forge/ui',
+    '@forge/persistence',
   ],
 };
 let errors = 0;

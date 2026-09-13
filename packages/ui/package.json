@@ -1,0 +1,13 @@
+{
+  "name": "@forge/ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@forge/assets": "0.2.0",
+    "@forge/core": "0.1.0",
+    "@forge/runtime": "0.1.0",
+    "zod": "4.3.6"
+  }
+}

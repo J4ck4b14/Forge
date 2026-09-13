@@ -29,6 +29,8 @@
       "@forge/scripting": ["./packages/scripting/src/index.ts"],
       "@forge/scripting/compiler": ["./packages/scripting/src/compiler.ts"],
       "@forge/graphs": ["./packages/graphs/src/index.ts"],
+      "@forge/ui": ["./packages/ui/src/index.ts"],
+      "@forge/persistence": ["./packages/persistence/src/index.ts"],
       "@forge/prefabs": ["./packages/prefabs/src/index.ts"],
       "@forge/animation": ["./packages/animation/src/index.ts"],
       "@forge/audio": ["./packages/audio/src/index.ts"],
