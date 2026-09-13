@@ -36,7 +36,8 @@
       "@forge/animation": ["./packages/animation/src/index.ts"],
       "@forge/audio": ["./packages/audio/src/index.ts"],
       "@forge/player": ["./packages/player/src/index.ts"],
-      "@forge/player/session": ["./packages/player/src/session.ts"]
+      "@forge/player/session": ["./packages/player/src/session.ts"],
+      "@forge/interchange": ["./packages/interchange/src/index.ts"]
     }
   },
   "include": ["packages", "examples", "tests", "vite.config.ts"]

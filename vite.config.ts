@@ -51,6 +51,7 @@ export default defineConfig({
           'persistence',
           'tilemap',
           'renderer',
+          'interchange',
         ].map((name) => [
           `@forge/${name}`,
           fileURLToPath(

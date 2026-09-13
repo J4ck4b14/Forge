@@ -62,6 +62,7 @@ const allowed = {
     'zod',
   ],
   runtime: ['@forge/core'],
+  interchange: ['@forge/graphs', '@forge/serialization'],
   player: [
     '@forge/core',
     '@forge/serialization',
@@ -96,6 +97,7 @@ const allowed = {
     '@forge/ui',
     '@forge/persistence',
     '@forge/tilemap',
+    '@forge/interchange',
   ],
 };
 let errors = 0;
