@@ -2,11 +2,11 @@
 
 ## Delivered
 
-Forge 0.10–0.15 established fast scripting/visual logic, runtime UI and persistence, 2D authoring, live iteration, and game-feel systems. Forge 0.16 establishes the public-release and Interchange foundation.
+Forge 0.10–0.15 established fast scripting/visual logic, runtime UI and persistence, 2D authoring, live iteration, and game-feel systems. Forge 0.16 establishes the public-release and Interchange foundation. Forge 0.16.1 adds deterministic Godot 4 project generation.
 
 ## Portability series
 
-1. Forge 0.16.1 — deterministic Godot project generation.
+1. Forge 0.16.1 — deterministic Godot project generation. **Delivered.**
 2. Forge 0.16.2 — Unity package/project output with a supported Editor importer.
 3. Forge 0.16.3 — Unreal Engine 5 import bundle and Editor plugin; no synthesized `.uasset` files.
 
