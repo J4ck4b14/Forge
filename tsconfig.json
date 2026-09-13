@@ -39,7 +39,8 @@
       "@forge/player/session": ["./packages/player/src/session.ts"],
       "@forge/interchange": ["./packages/interchange/src/index.ts"],
       "@forge/interchange/godot": ["./packages/interchange/src/godot.ts"],
-      "@forge/interchange/unity": ["./packages/interchange/src/unity.ts"]
+      "@forge/interchange/unity": ["./packages/interchange/src/unity.ts"],
+      "@forge/interchange/unreal": ["./packages/interchange/src/unreal.ts"]
     }
   },
   "include": ["packages", "examples", "tests", "vite.config.ts"]

@@ -38,6 +38,9 @@ export default defineConfig({
       '@forge/interchange/unity': fileURLToPath(
         new URL('./packages/interchange/src/unity.ts', import.meta.url),
       ),
+      '@forge/interchange/unreal': fileURLToPath(
+        new URL('./packages/interchange/src/unreal.ts', import.meta.url),
+      ),
       ...Object.fromEntries(
         [
           'player',

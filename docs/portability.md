@@ -27,6 +27,14 @@ The bundle intentionally contains no generated `.unity`, `.prefab`, `.anim`, `.c
 
 Generated assets live in `Assets/Generated/Forge`; keep target-side code and content elsewhere. Affine shear, atlas-region slicing, exact animation threshold semantics, custom audio buses/polyphony, UI, render-pipeline-specific 2D lighting, prefab authoring assets, arbitrary TypeScript and platform services are retained and explicitly reported for review or manual work.
 
+## Unreal Engine 5 export
+
+Forge 0.16.3 generates a UE 5.4+ project with the Forge Portability plugin. Its Editor module imports media through AssetTools, creates maps and attached actors through world/component APIs, reconstructs supported Paper2D sprites and flipbooks, collision primitives, orthographic cameras, audio components and Enhanced Input assets, and stores the complete Forge payload on stable identity components. **Tools → Forge → Reimport** reruns the source-fingerprint-aware import.
+
+The plugin's separate Runtime module provides the portable Behaviour Graph ActorComponent in C++. Unreal Python is not part of gameplay or import. Forge writes source code, JSON and source media only—never `.uasset` or `.umap` binaries. Unreal creates those under `/Game/Generated/Forge` through its own asset system.
+
+Keep custom Unreal work outside that generated Content path. TRS reduction of affine shear, atlas slicing, detailed physics/material parity, complete animation state logic, Enhanced Input modifiers, UMG, Niagara, 2D lighting, prefab/Blueprint authoring assets, arbitrary TypeScript and platform services remain explicit fidelity notes rather than silent omissions.
+
 ## Coordinate contract
 
 Forge uses pixels, +X right, +Y down, and clockwise radians. Conversion is centralized in `@forge/interchange`: Godot retains pixel/Y-down coordinates, Unity uses 100 pixels per unit with Y inversion, and the Unreal bundle uses centimeters with Y inversion for its 2D plane. Target exporters consume these profiles instead of embedding conversion constants.
